@@ -16,7 +16,7 @@ Então quando você usa o setInterval saiba que ele esta vindo do c++, igual ao 
 
 E para rodar alguma tarefa que supostamente iria travar tudo seja uma leitura de um arquivo grande, edição de video ou um for loop enorme, usamos as workers threads, que são as multiplas threads, que vai deixar executando essa suposta tarefa em segundo plano. Um exemplo desse so que no front-end é o web worker, que é uma thread separada do browser, que vai executar uma tarefa em segundo plano, sem travar o browser. ex de código [performance-multithreading-em-navegadores-ECMAScript-Modules-em-Web-Workers](https://github.com/PedrohvFernandes/performance-multithreading-em-navegadores-ECMAScript-Modules-em-Web-Workers)
 
-Apesar de conseguir fazer isso, é muito importante que tenha bom senso na hora que usar, tanto no front quanto no back, pelo fato que o node/js foi feito para não consumir tanto recurso do sistema, usando somente uma thread e colocando tudo em um loop, para que não precise utilizar outras threads.
+Apesar de conseguir fazer isso, é muito importante que tenha bom senso na hora que usar, tanto no front quanto no back, pelo fato que o node e o js foram feitos para não consumirem tanto recurso do sistema, usando somente uma thread e colocando tudo em um event loop, para que não precisa-se utilizar outras thread da CPU.
 
 
 ## Como rodar o projeto:
